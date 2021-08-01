@@ -41,7 +41,7 @@ function setup() {
 	ground = new Ground(width/2,600,width,20);
 
   //create launcher with stone as bodyA
-  launcher = new Launcher(mango1.body,{x:235,y:420});
+  launcher = new Launcher(stone.body,{x:235,y:420});
 
 	Engine.run(engine);
 }
@@ -93,7 +93,7 @@ function draw() {
 function mouseDragged()
 {
   // Set position of stone when mouse is dragged
-	Matter.Body.setPosition(mango1.body, {x:mouseX, y:mouseY});
+	Matter.Body.setPosition(stone.body, {x:mouseX, y:mouseY});
 }
 
 function mouseReleased()
